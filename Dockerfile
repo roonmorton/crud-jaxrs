@@ -10,7 +10,7 @@ COPY src/ /app/src/
 RUN mvn clean package
 
 # Utilizar una imagen de Payara Server para desplegar la aplicación
-FROM payara/micro:5.2022.2-jdk11
+FROM payara/micro:5.2022.5-jdk11
 COPY --from=build /app/target/crud-jaxrs.war $DEPLOY_DIR
 
 
