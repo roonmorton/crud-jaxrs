@@ -1,4 +1,4 @@
-package com.example.crud;
+package com.example.crud.repositories;
 
 import com.example.crud.domains.Post;
 import jakarta.ejb.Stateless;

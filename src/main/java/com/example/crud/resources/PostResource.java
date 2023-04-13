@@ -1,6 +1,6 @@
 package com.example.crud.resources;
 
-import com.example.crud.PostsRepository;
+import com.example.crud.repositories.PostsRepository;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.DELETE;
 import jakarta.ws.rs.GET;
