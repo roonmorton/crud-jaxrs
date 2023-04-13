@@ -6,7 +6,7 @@
         <properties>
             <property name="eclipselink.logging.level.sql" value="FINE"/>
             <property name="eclipselink.logging.parameters" value="true"/>
-            <property name="eclipselink.target-database" value="org.eclipse.persistence.platform.database.MariaDBPlatform"/>
+            <!--<property name="eclipselink.target-database" value="org.eclipse.persistence.platform.database.MariaDBPlatform"/>-->
         </properties>
     </persistence-unit>
 </persistence>
