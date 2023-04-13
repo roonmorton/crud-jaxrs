@@ -3,21 +3,21 @@
 <payara-web-app error-url="">
   <context-root>crud-jaxrs</context-root>
   <class-loader delegate="true"/>
-  <servlet>
+  <!--<servlet>
         <servlet-name>myServlet</servlet-name>
         <servlet-class>com.example.crud.RestConfiguration</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>myServlet</servlet-name>
         <url-pattern>/</url-pattern>
-    </servlet-mapping>
+    </servlet-mapping>-->
   <!--<resource-ref>
         <description>Resource for the post database</description>
         <res-ref-name>jdbc/blogDataSource</res-ref-name>
         <res-type>javax.sql.DataSource</res-type>
         <res-auth>Container</res-auth>
     </resource-ref>-->
-  <listener>
+  <!--<listener>
     <listener-class>com.example.crud.MyServletContextListener</listener-class>
-  </listener>
+  </listener>-->
 </payara-web-app>
