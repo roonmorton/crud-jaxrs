@@ -3,7 +3,11 @@
   <jdbc-connection-pool 
         name="blogPool"
         res-type="javax.sql.ConnectionPoolDataSource"
-        datasource-classname="com.mysql.jdbc.jdbc2.optional.MysqlConnectionPoolDataSource">
+        datasource-classname="com.mysql.jdbc.jdbc2.optional.MysqlConnectionPoolDataSource"
+        pool-resize-quantity="2"
+        max-pool-size="32"
+        steady-pool-size="8"
+  >
     <property name="serverName" value="mariadb10"/>
     <property name="portNumber" value="3306"/>
     <property name="databaseName" value="db_posts"/>
@@ -20,5 +24,7 @@
         enabled="true" 
         jndi-name="jdbc/blogDataSource"
         object-type="user" 
-        pool-name="blogPool"/>
+      pool-name="blogPool">
+      <description>MySql jdbc</description>
+  </jdbc-resource>
 </resources>
