@@ -8,7 +8,7 @@ RUN mvn dependency:go-offline
 COPY src/ /app/src/
 RUN mvn clean package
 RUN echo "El archivo WAR se llama: ${WAR_FILE}"
-RUN echo HELLO: ${HELLO}"
+RUN echo "HELLO: ${HELLO}"
 
 # Utilizar una imagen de Payara Server para desplegar la aplicación
 FROM payara/micro:5.2022.2-jdk11
