@@ -41,21 +41,21 @@
                     <include>**/*</include>
                 </includes>
             </resource>
-            <resource>
+            <!--<resource>
                 <directory>src/main/webapp</directory>
                 <includes>
                     <include>**/*</include>
                 </includes>
                 <targetPath>META-INF</targetPath>
                 <filtering>true</filtering>
-            </resource>
+            </resource>-->
             <resource>
                 <directory>src/main/webapp/WEB-INF</directory>
                 <includes>
                     <include>**/*</include>
                 </includes>
                 <targetPath>WEB-INF</targetPath>
-                <filtering>true</filtering>
+                <filtering>false</filtering>
             </resource>
         </resources>
         <plugins>

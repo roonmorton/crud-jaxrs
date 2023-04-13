@@ -4,17 +4,17 @@
         name="blogPool"
         res-type="javax.sql.ConnectionPoolDataSource"
         datasource-classname="com.mysql.jdbc.jdbc2.optional.MysqlConnectionPoolDataSource">
-    <property name="serverName" value="localhost"/>
+    <property name="serverName" value="mariadb10"/>
     <property name="portNumber" value="3306"/>
-    <property name="databaseName" value="mydatabase"/>
-    <property name="user" value="myuser"/>
-    <property name="password" value="mypassword"/>
+    <property name="databaseName" value="db_posts"/>
+    <property name="user" value="u_post"/>
+    <property name="password" value="posts1342"/>
     <!--<property name="useSSL" value="false"/>
     <property name="characterEncoding" value="UTF-8"/>
     <property name="zeroDateTimeBehavior" value="convertToNull"/>
     <property name="useUnicode" value="true"/>
     <property name="serverTimezone" value="UTC"/>-->
-    <property name="description" value="My Connection Pool"/>
+    <property name="description" value="My Connection Pool"/>   
   </jdbc-connection-pool>
   <jdbc-resource 
         enabled="true" 
