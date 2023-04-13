@@ -8,4 +8,7 @@
         <res-type>javax.sql.DataSource</res-type>
         <res-auth>Container</res-auth>
     </resource-ref>
+      <listener>
+        <listener-class>com.example.crud.MyServletContextListener</listener-class>
+    </listener>
 </payara-web-app>
