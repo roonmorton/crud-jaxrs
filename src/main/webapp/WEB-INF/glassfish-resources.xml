@@ -16,8 +16,8 @@
         <property name="URL" value="jdbc:mariadb://mariadb10:3306/db_posts"/>
         <!--<property name="serverName" value="mariadb10"/>
         <property name="portNumber" value="3306"/>
-        <property name="databaseName" value="db_posts"/>
-        <property name="user" value="u_post"/>-->
+        <property name="databaseName" value="db_posts"/>-->
+        <property name="user" value="u_post"/>
         <property name="password" value="posts1342"/>
         <property name="useSSL" value="false"/>
         <!--<property name="characterEncoding" value="UTF-8"/>
