@@ -1,4 +1,5 @@
-ARG WAR_FILE=/app/target/crud-jaxrs.war
+#ARG WAR_FILE=/app/target/crud-jaxrs.war
+#ENV WAR_FILE=/app/target/crud-jaxrs.war
 #ARG HELLO=hellouw
 
 FROM maven:3.8.3-jdk-11 AS build
