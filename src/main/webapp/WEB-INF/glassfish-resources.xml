@@ -3,11 +3,11 @@
     <jdbc-resource 
         enabled="true" 
         jndi-name="java:app/jdbc/blogDataSource"
-        pool-name="blogPool">
+        pool-name="java:app/blogPool">
         <description>MySql jdbc</description>
     </jdbc-resource>
     <jdbc-connection-pool 
-        name="blogPool"
+        name="java:app/blogPool"
         res-type="javax.sql.DataSource"
         datasource-classname="org.mariadb.jdbc.MariaDbDataSource"
         pool-resize-quantity="2"
