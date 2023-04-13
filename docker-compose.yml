@@ -15,7 +15,8 @@ services:
     ports:
       - 3306:3306
     
-  crud-jaxrs:
+  app:
+    container_name: app
     build: 
       context: .
       dockerfile: Dockerfile
