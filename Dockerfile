@@ -6,10 +6,11 @@ COPY pom.xml .
 RUN mvn dependency:go-offline
 COPY src/ /app/src/
 RUN mvn clean package
+RUN mvn clean package && echo "El archivo WAR se llama: ${WAR_FILE}"
 
 # Utilizar una imagen de Payara Server para desplegar la aplicación
 FROM payara/micro:5.2022.2-jdk11
 COPY --from=build ${WAR_FILE} $DEPLOY_DIR
-
+RUN echo "MY_VAR=$WAR_FILE"
 
 EXPOSE 8080
