@@ -2,8 +2,8 @@
 <resources>
   <jdbc-connection-pool 
         name="blogPool"
-        res-type="javax.sql.ConnectionPoolDataSource"
-        datasource-classname="com.mysql.jdbc.jdbc2.optional.MysqlConnectionPoolDataSource"
+        res-type="javax.sql.DataSource"
+        datasource-classname="org.mariadb.jdbc.MariaDbDataSource"
         pool-resize-quantity="2"
         max-pool-size="32"
         steady-pool-size="8"
@@ -27,4 +27,6 @@
       pool-name="blogPool">
       <description>MySql jdbc</description>
   </jdbc-resource>
+  
+  
 </resources>
