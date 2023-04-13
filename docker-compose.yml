@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  crud-jaxrs:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    image: crud-jaxrs
+    ports:
+      - "8080:8080"
