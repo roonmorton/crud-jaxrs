@@ -1,0 +1,10 @@
+<resources>
+  <jdbc-connection-pool name="MyPool" res-type="javax.sql.DataSource">
+    <property name="driverClass" value="com.mysql.jdbc.Driver"/>
+    <property name="url" value="jdbc:mysql://localhost:3306/mydb"/>
+    <property name="user" value="myuser"/>
+    <property name="password" value="mypassword"/>
+  </jdbc-connection-pool>
+  
+  <jdbc-resource pool-name="MyPool" jndi-name="jdbc/MyDS"/>
+</resources>
