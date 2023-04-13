@@ -1,6 +1,6 @@
 package com.example.crud.network.request;
 
-import jakarta.validation.constraints.NotNull;
+import javax.validation.constraints.NotNull;
 
 public class PostRequest {
 

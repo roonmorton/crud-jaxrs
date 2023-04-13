@@ -1,10 +1,10 @@
 package com.example.crud.repositories;
 
 import com.example.crud.domains.Post;
-import jakarta.ejb.Stateless;
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.PersistenceContext;
-import jakarta.ws.rs.core.Response;
+import javax.ejb.Stateless;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.ws.rs.core.Response;
 
 @Stateless
 public class PostsRepository {

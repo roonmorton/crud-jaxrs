@@ -20,4 +20,11 @@
   <!--<listener>
     <listener-class>com.example.crud.MyServletContextListener</listener-class>
   </listener>-->
+  <servlet-mapping>
+    <servlet-name>myServlet</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+  <listener>
+    <listener-class>com.example.crud.MyServletContextListener</listener-class>
+  </listener>
 </payara-web-app>

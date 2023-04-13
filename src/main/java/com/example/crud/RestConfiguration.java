@@ -1,13 +1,9 @@
 package com.example.crud;
 
-import jakarta.ws.rs.ApplicationPath;
-import jakarta.ws.rs.core.Application;
-import org.glassfish.jersey.server.ResourceConfig;
+import javax.ws.rs.ApplicationPath;
+import javax.ws.rs.core.Application;
 
 @ApplicationPath("/api")
-public class RestConfiguration extends ResourceConfig {
+public class RestConfiguration extends Application {
 
-    public RestConfiguration() {
-        packages("com.example.crud.resources");
-    }
 }
