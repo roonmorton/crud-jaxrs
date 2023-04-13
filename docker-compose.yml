@@ -2,7 +2,7 @@ version: '3.8'
 services:
   mariadb10:
     container_name: mariadb10
-    image: 10.7.8-focal
+    image: mariadb:10.7.8-focal
     restart: always
     volumes:
       - /home/administrador/docker/volumes/mariadb10/data:/var/lib/mysql
