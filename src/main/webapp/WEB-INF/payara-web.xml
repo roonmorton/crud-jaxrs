@@ -2,7 +2,15 @@
 <!DOCTYPE payara-web-app PUBLIC "-//Payara.fish//DTD Payara Server 4 Servlet 3.0//EN" "https://docs.payara.fish/schemas/payara-web-app_4.dtd">
 <payara-web-app error-url="">
   <context-root>crud-jaxrs</context-root>
-  <class-loader delegate="true"/>
+  <class-loader delegate="false"/>
+  <!--<servlet>
+        <servlet-name>myServlet</servlet-name>
+        <servlet-class>com.example.myapp.MyApplication</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>myServlet</servlet-name>
+        <url-pattern>/api/*</url-pattern>
+    </servlet-mapping>-->
   <!--<resource-ref>
         <description>Resource for the post database</description>
         <res-ref-name>jdbc/blogDataSource</res-ref-name>
