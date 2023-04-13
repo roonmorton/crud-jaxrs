@@ -3,18 +3,18 @@
   <jdbc-connection-pool 
         name="blogPool"
         res-type="javax.sql.ConnectionPoolDataSource"
-        datasource-classname="com.mysql.jdbc.jdbc2.optional.MysqlConnectionPoolDataSource"
-        description="Connection pool for MySQL">
+        datasource-classname="com.mysql.jdbc.jdbc2.optional.MysqlConnectionPoolDataSource">
     <property name="serverName" value="localhost"/>
     <property name="portNumber" value="3306"/>
     <property name="databaseName" value="mydatabase"/>
     <property name="user" value="myuser"/>
     <property name="password" value="mypassword"/>
-    <property name="useSSL" value="false"/>
+    <!--<property name="useSSL" value="false"/>
     <property name="characterEncoding" value="UTF-8"/>
     <property name="zeroDateTimeBehavior" value="convertToNull"/>
     <property name="useUnicode" value="true"/>
-    <property name="serverTimezone" value="UTC"/>
+    <property name="serverTimezone" value="UTC"/>-->
+    <description>My Connection Pool</description>
   </jdbc-connection-pool>
   <jdbc-resource 
         enabled="true" 
