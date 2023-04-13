@@ -10,7 +10,7 @@ RUN mvn clean package
 
 # Utilizar una imagen de Payara Server para desplegar la aplicación
 FROM payara/micro:5.2022.2-jdk11
-COPY --from=build $WAR_FILE $DEPLOY_DIR
+COPY --from=build ${WAR_FILE} $DEPLOY_DIR
 
 
 EXPOSE 8080
