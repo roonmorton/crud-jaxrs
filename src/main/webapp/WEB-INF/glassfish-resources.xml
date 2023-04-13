@@ -22,8 +22,7 @@
   </jdbc-connection-pool>
   <jdbc-resource 
         enabled="true" 
-        jndi-name="jdbc/blogDataSource"
-        object-type="user" 
+        jndi-name="java:app/jdbc/blogDataSource"
       pool-name="blogPool">
       <description>MySql jdbc</description>
   </jdbc-resource>
