@@ -1,6 +1,7 @@
 package com.example.crud.repositories;
 
 import com.example.crud.domains.Post;
+import com.example.crud.network.response.ApiResponse;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -13,6 +14,8 @@ public class PostsRepository {
     private EntityManager em;
 
     public Response obtenerPosts() {
-        return Response.ok(em.createNamedQuery(Post.SELECT_ALL, Post.class).getResultList()).build();
+        ApiResponse res = new ApiResponse();
+        res.setPosts(em.createNamedQuery(Post.SELECT_ALL, Post.class).getResultList());
+        return Response.ok(res).build();
     }
 }
