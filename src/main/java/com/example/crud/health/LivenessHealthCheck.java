@@ -2,13 +2,14 @@ package com.example.crud.health;
 
 import java.time.LocalDateTime;
 import javax.annotation.PostConstruct;
+import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.context.RequestScoped;
 import org.eclipse.microprofile.health.HealthCheck;
 import org.eclipse.microprofile.health.HealthCheckResponse;
 import org.eclipse.microprofile.health.Liveness;
 
 @Liveness
-@RequestScoped
+@ApplicationScoped
 public class LivenessHealthCheck implements HealthCheck {
 
     private String time;
