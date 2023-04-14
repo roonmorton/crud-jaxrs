@@ -14,4 +14,8 @@ FROM payara/micro:5.2022.5-jdk11
 COPY --from=build /app/target/crud-jaxrs.war $DEPLOY_DIR
 
 
+# Agregar el HEALTH CHECK
+HEALTHCHECK --interval=3s --timeout=10s \
+  CMD curl --fail http://localhost:8080/health || exit 1
+
 EXPOSE 8080

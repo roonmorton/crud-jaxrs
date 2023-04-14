@@ -17,10 +17,11 @@ services:
     
   app-crud-jaxrs:
     container_name: app-crud-jaxrs
+    restart: always
     build: 
       context: .
       dockerfile: Dockerfile
-    image: roonmorton/crud-jaxrs:v1.3.1
+    image: roonmorton/crud-jaxrs:v1.3.2
     ports:
       - "8083:8080"
     depends_on:
