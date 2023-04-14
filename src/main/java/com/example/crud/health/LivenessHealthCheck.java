@@ -22,7 +22,9 @@ public class LivenessHealthCheck implements HealthCheck {
     @Override
     public HealthCheckResponse call() {
 
-        return HealthCheckResponse.builder().name("Liveness Check")
+        return HealthCheckResponse.builder()
+                .name("Liveness Check")
+                .up()
                 .withData("status", "ALIVE")
                 .withData("from", time)
                 .build();
