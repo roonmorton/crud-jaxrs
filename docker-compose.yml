@@ -21,7 +21,7 @@ services:
     build: 
       context: .
       dockerfile: Dockerfile
-    image: roonmorton/crud-jaxrs:v1.0.0
+    image: roonmorton/crud-jaxrs:v1.0.1
     ports:
       - "8083:8080"
     depends_on:
