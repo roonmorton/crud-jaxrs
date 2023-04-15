@@ -36,6 +36,13 @@
             <version>2.1</version>
             <type>jar</type>
         </dependency>
+        
+        <dependency>
+            <groupId>org.microprofile-ext.health-ext</groupId>
+            <artifactId>health-ui</artifactId>
+            <version>1.2.0</version>
+            <scope>runtime</scope>
+        </dependency>
 
     </dependencies>
     
